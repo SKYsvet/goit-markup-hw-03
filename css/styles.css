@@ -1,0 +1,391 @@
+:root {
+  --weight-title: 700;
+  --color-title: #212121;
+  --size-section-title: 36px;
+  --color-accent: #2196f3;
+  --color-text: #757575;
+  --color-text-second: #ffffff;
+  --wight-btn: 500;
+  --size-btn: 16px;
+  --background-btn: #f5f4fa;
+  --size-img-title: 18px;
+  --line-height-img-title: 2;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ==========логотип========== */
+
+.header {
+  border: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list,
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list {
+  margin-left: auto;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.logo-text {
+  color: #000000;
+  margin-right: 93px;
+}
+
+/* навигация и контакты */
+
+.nav-link,
+.contacts-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.nav-link {
+  color: #212121;
+}
+
+.nav-item:last-child .nav-link,
+.contacts-item:last-child .contacts-link {
+  margin-right: 0px;
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.contacts-link:focus,
+.contacts-link:hover {
+  color: var(--color-accent);
+}
+
+.contacts-link {
+  color: var(--color-text);
+}
+
+/* герой */
+
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.title-hero {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-second);
+}
+
+.button-hero {
+  min-width: 200px;
+  min-height: 50px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: var(--size-btn);
+  color: var(--color-text-second);
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* Наши преимущества */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.advantage-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage-title {
+  margin-bottom: 10px;
+  font-weight: var(--weight-title);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+
+.advantage-text {
+  letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+
+.wrap {
+}
+
+.wrap-list {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: calc(100%-2 * 30px) / 3;
+}
+
+.wrap-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: var(--weight-title);
+  font-size: var(--size-section-title);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-title);
+}
+
+/* Наша команда */
+
+.section-cards {
+  background-color: #f5f4fa;
+  margin-bottom: 199px;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.cards-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.cards-item {
+  text-align: center;
+  border-bottom: 1px solid #757575;
+  border-radius: 2px;
+}
+
+.card-img {
+  margin-bottom: 30px;
+}
+
+.cards-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+}
+.cards-text {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* подвал */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+
+.logo-text-footer {
+  color: var(--color-text-second);
+}
+
+.address-list {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.address-link {
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-item:not(:last-child) .address-link {
+  margin-bottom: 9px;
+}
+
+.address-href {
+  color: var(--color-text-second);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-accent);
+}
+
+/* Портфолио */
+/* Кнопки */
+
+.portfolio-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.nav-list .link.current {
+  color: var(--color-accent);
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn {
+  font-weight: var(--wight-btn);
+  font-size: var(--size-btn);
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-accent);
+  color: var(--color-text-second);
+}
+
+/* Карточки */
+
+.portfolio-list {
+  margin-right: -30px;
+  margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-img {
+  flex-basis: calc(100% / 3-30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.img-link {
+  text-decoration: none;
+}
+
+.img-box {
+  padding: 20px 24px;
+}
+
+.item-img-title {
+  margin-bottom: 4px;
+  font-weight: var(--weight-title);
+  font-size: var(--size-img-title);
+  line-height: var(--line-height-img-title);
+  letter-spacing: 0.06em;
+  color: var(--color-title);
+}
+
+.item-img-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
