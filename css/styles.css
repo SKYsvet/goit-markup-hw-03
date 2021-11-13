@@ -364,6 +364,7 @@ img {
   flex-basis: calc(100% / 3-30px);
   margin-right: 30px;
   margin-bottom: 30px;
+  border-bottom: 1px solid #cccccc;
 }
 
 .img-link {
