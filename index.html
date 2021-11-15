@@ -21,13 +21,13 @@
     <div class="container header-container"> 
       <a class="logo" href="/">Web<span class="logo-text">Studio</span></a>
       <nav class="nav">
-        <ul class="list nav-list">
+        <ul class="nav-list">
           <li class="nav-item"><a class="nav-link link current" href="./index.html">Студия</a></li>
           <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
           <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="list contacts-list">
+      <ul class="contacts-list">
         <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">+380961111111</a></li>
       </ul>
@@ -35,7 +35,7 @@
    </header>
      <main>
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container container-hero">
           <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button-hero">Заказать услугу</button>
         </div>
@@ -43,7 +43,7 @@
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="list advantage-list">
+          <ul class="advantage-list">
               <li class="advantage-item">
                   <h3 class="advantage-title">Внимание к деталям</h3>
                   <p class="advantage-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -63,10 +63,10 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container wrap">
+      <section class="section section-wrap">
+        <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list wrap-list">
+          <ul class="wrap-list">
              <li class="wrap-item"><img src="./images/box1.jpg" alt="набор текста на планшете" width="370">
              </li>
              <li class="wrap-item"><img src="./images/box2.jpg" alt="структура сайта на экране" width="370">
@@ -79,36 +79,44 @@
       <section class="section section-cards">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list cards-list">
+          <ul class="cards-list">
               <li class="cards-item">
                      <img class="card-img" src="./images/photo1.jpg" alt="фото члена команды" width="270">
-                     <h3 class="cards-title">Игорь Демьяненко</h3>
-                     <p class="cards-text">Product Designe</p>
+                     <div class="card-wrap">
+                       <h3 class="cards-title">Игорь Демьяненко</h3>
+                       <p class="cards-text">Product Designe</p>
+                     </div> 
               </li>
               <li class="cards-item">
                      <img class="card-img" src="./images/photo2.jpg" alt="фото члена команды" width="270"> 
-                     <h3 class="cards-title">Ольга Репина</h3>
-                     <p class="cards-text">Frontend Developer</p>
-               </li>
+                     <div class="card-wrap">
+                       <h3 class="cards-title">Ольга Репина</h3>
+                       <p class="cards-text">Frontend Developer</p>
+                     </div> 
+              </li>
               <li class="cards-item">
                      <img class="card-img" src="./images/photo3.jpg" alt="фото члена команды" width="270"> 
-                     <h3 class="cards-title">Николай Тарасов</h3>
-                     <p class="cards-text">Marketing</p>
+                     <div class="card-wrap">
+                       <h3 class="cards-title">Николай Тарасов</h3>
+                       <p class="cards-text">Marketing</p>
+                     </div> 
               </li>
               <li class="cards-item">
                      <img class="card-img" src="./images/photo4.jpg" alt="фото члена команды" width="270"> 
-                     <h3 class="cards-title">Михаил Ермаков</h3>
-                     <p class="cards-text">UI Designer</p>
+                     <div class="card-wrap">
+                       <h3 class="cards-title">Михаил Ермаков</h3>
+                       <p class="cards-text">UI Designer</p>
+                     </div> 
               </li>
           </ul>
         </div>
       </section>
      </main>
      <footer class="footer">
-     <div class="container footer-container">
+     <div class="container">
       <a class="logo" href="/">Web<span class="logo-text-footer">Studio</span></a>
-       <address>
-        <ul class="list address-list">
+       <address class="address">
+        <ul class="address-list">
          <li class="address-item"><a class="address-link address-href" href="https://goo.gl/maps/M4pxGZBaboN6nZQU7" target="_blank"
             rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
          <li class="address-item"><a class="address-link" href=""> hinfo@example.com</a></li>
